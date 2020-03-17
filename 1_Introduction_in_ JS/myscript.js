@@ -54,6 +54,48 @@ switch(a) {
 }
 
 
+// Циклы
+for (let i = 1; i <= 5; i = i + 1) {
+  console.log("i = " + i);
+}
+
+var xxx = 1; 
+//объявляем и инициализируем переменную, которую 
+//мы будем использовать как условие цикла
+while (xxx <= 5) {
+  console.log(" x= " + xxx);
+  xxx++;
+}
+
+var x = 5;                //установка начального значения
+do {                      //начало выполнения цикла
+  console.log(x);         //вывод данных в консоль
+  x = x - 1;              //уменьшение значения на 1
+} while (x >= 1);         //проверка условия
+
+for (let i = 1; i < 10; i = i + 1) {
+  if (i == 5) {
+    break;
+    //continue;
+  }
+  console.log('i= '+i);
+}
+
+// Метки в JavaScript действуют только для циклов и оператора Switch
+metka: for (i = 1; i <= 50; i++) {
+  while (i < a) {
+    console.log(i);
+    if (i == a) {
+      break metka; 
+    }
+
+    if (i == b) {
+      continue metka; 
+    }
+  }
+}
+
+
 
 // Функция
 function SimpleMethod(a) {
